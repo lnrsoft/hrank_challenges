@@ -1,37 +1,32 @@
 //-----------------------------------------------------best solution
 
-//#include <vector>
-//#include <iostream>
+#include <vector>
+#include <iostream>
 
-//int main()
-//{
-//	std::vector<int> factorials;
-//	factorials.push_back(1);
-//	int n;
-//	std::cin >> n;
-//	for (auto i = 1; i <= n; i++)
-//	{
-//		for (auto j = 0; j < factorials.size(); j++)
-//		{
-//			factorials[j] *= i;
-//		}
-//		for (auto j = 0; j < factorials.size() - 1; j++)
-//		{
-//			factorials[j + 1] += factorials[j] / 10;
-//			factorials[j] %= 10;
-//		}
-//		while (factorials[factorials.size() - 1] / 10)
-//		{
-//			factorials.push_back(factorials[factorials.size() - 1] / 10);
-//			factorials[factorials.size() - 2] %= 10;
-//		}
-//	}
-//	for (int i = factorials.size() - 1; i >= 0; i--)
-//	{
-//		std::cout << factorials[i];
-//	}
-//	return 0;
-//}
+int main()
+{
+    std::vector<int> factorials;
+    factorials.push_back(1);
+    int n;
+    std::cin >> n;
+    for(auto i = 1; i <= n; i++) {
+        for(auto j = 0; j < factorials.size(); j++) {
+            factorials[j] *= i;
+        }
+        for(auto j = 0; j < factorials.size() - 1; j++) {
+            factorials[j + 1] += factorials[j] / 10;
+            factorials[j] %= 10;
+        }
+        while(factorials[factorials.size() - 1] / 10) {
+            factorials.push_back(factorials[factorials.size() - 1] / 10);
+            factorials[factorials.size() - 2] %= 10;
+        }
+    }
+    for(int i = factorials.size() - 1; i >= 0; i--) {
+        std::cout << factorials[i];
+    }
+    return 0;
+}
 
 //-----------------------------------------------------solution 1
 
