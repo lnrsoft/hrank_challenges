@@ -71,6 +71,8 @@ SOURCES += \
     taum_and_bday.cpp \
     cpp_vector-sort.cpp \
     cpp_virtual_functions.cpp \
-    cpp_rectagle_area.cpp
+    cpp_rectagle_area.cpp \
+    cpp_variable_sized_arrays.cpp \
+    cpp_multi_level_inheritance.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
