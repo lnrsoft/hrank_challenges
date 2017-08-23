@@ -1,4 +1,4 @@
-//// (c)  Roland Ihasz - https://github.com/lnrsoft
+// (c)  Roland Ihasz - https://github.com/lnrsoft
 
 #include <vector>
 #include <iostream>
