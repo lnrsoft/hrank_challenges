@@ -1,0 +1,11 @@
+--style=allman
+--delete-empty-lines
+--indent=tab
+--align-pointer=name
+--align-reference=name
+--add-brackets
+--close-templates
+--remove-comment-prefix
+--max-code-length=115
+--mode=c
+--pad-oper
