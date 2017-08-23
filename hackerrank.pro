@@ -74,6 +74,7 @@ SOURCES += \
     cpp_rectagle_area.cpp \
     cpp_variable_sized_arrays.cpp \
     cpp_multi_level_inheritance.cpp \
-    cpp_set_stl.cpp
+    cpp_set_stl.cpp \
+    cpp_inheritance_introduction.cpp
 
 QMAKE_CXXFLAGS += -std=c++11
